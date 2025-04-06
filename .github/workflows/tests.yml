@@ -18,7 +18,7 @@ jobs:
             - name: Install Dependencies
               run: |
                 python -m pip install --upgrade pip
-                pip install fastapi uvicorn httpx pytest pydantic pydantic_settings
+                pip install -r requirements.txt
             
             - name: run Tests
               run: python -m tests/test_user.py
